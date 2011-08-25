@@ -17,4 +17,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+    <genericsetup:upgradeStep
+        title="Disable compression of fullcalendar.min.js"
+        description="Disable compression of fullcalendar.min.js in registry"
+        source="*"
+        destination="2"
+        handler=".upgrades.v2"
+        profile="collective.js.fullcalendar:default"/>
+
 </configure>
