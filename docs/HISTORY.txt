@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.5.3 (unreleased)
-------------------
+1.5.2.1 (unreleased)
+--------------------
 
-- Nothing changed yet.
+- Do not fullcalendar.min.js compression by resources registry,
+  which is compressed by default.
 
 
 1.5.2 (2011-08-23)
