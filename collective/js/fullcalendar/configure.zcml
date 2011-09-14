@@ -25,4 +25,12 @@
         handler=".upgrades.v2"
         profile="collective.js.fullcalendar:default"/>
 
+    <genericsetup:upgradeStep
+        title="Register print css"
+        description="Add fullcalendar.print.css in css registry"
+        source="2"
+        destination="3"
+        handler=".upgrades.v3"
+        profile="collective.js.fullcalendar:default"/>
+
 </configure>

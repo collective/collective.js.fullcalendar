@@ -6,3 +6,10 @@ def v2(context):
                                      'jsregistry', run_dependencies=False,
                                      purge_old=False)
     getToolByName(context, 'portal_javascripts').cookResources()
+
+
+def v3(context):
+    context.runImportStepFromProfile('profile-collective.js.fullcalendar:default',
+                                     'cssregistry', run_dependencies=False,
+                                     purge_old=False)
+    getToolByName(context, 'portal_css').cookResources()
