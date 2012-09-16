@@ -33,4 +33,12 @@
         handler=".upgrades.v3"
         profile="collective.js.fullcalendar:default"/>
 
+    <genericsetup:upgradeStep
+        title="Refresh js"
+        description="Recook js resources"
+        source="3"
+        destination="4"
+        handler=".upgrades.recook_js_resources"
+        profile="collective.js.fullcalendar:default"/>
+
 </configure>

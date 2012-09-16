@@ -13,3 +13,8 @@ def v3(context):
                                      'cssregistry', run_dependencies=False,
                                      purge_old=False)
     getToolByName(context, 'portal_css').cookResources()
+
+
+def recook_js_resources(context):
+    getToolByName(context, 'portal_javascripts').cookResources()
+
