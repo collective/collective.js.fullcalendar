@@ -7,4 +7,4 @@ It does not provide any view or template. Is meant to be used as dependecy for b
 
 Tested with Plone 3.3.5/4.0.
 
-Now using fullcalendar v1.5
+Now using fullcalendar v1.6

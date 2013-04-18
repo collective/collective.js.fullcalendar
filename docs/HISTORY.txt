@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.6.1 (unreleased)
+------------------
+
+- Fullcalendar 1.6.1
+
 1.5.4 (unreleased)
 ------------------
 
