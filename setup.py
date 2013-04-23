@@ -5,7 +5,7 @@ version = '1.6.1'
 
 setup(name='collective.js.fullcalendar',
       version=version,
-      description="",
+      description="Plone package for integrating fullcalendar JS",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -20,7 +20,7 @@ setup(name='collective.js.fullcalendar',
       keywords='Plone JQuery Javascript Fullcalendar',
       author='Simone Orsi',
       author_email='simahawk@gmail.com',
-      url='http://svn.plone.org/svn/collective/collective.js.fullcalendar',
+      url='https://github.com/collective/collective.js.fullcalendar',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective', 'collective.js'],
