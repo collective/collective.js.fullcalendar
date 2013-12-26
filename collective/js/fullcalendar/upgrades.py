@@ -18,3 +18,7 @@ def v3(context):
 def recook_js_resources(context):
     getToolByName(context, 'portal_javascripts').cookResources()
 
+
+def recook_resources(context):
+    recook_js_resources(context)
+    getToolByName(context, 'portal_css').cookResources()
