@@ -28,6 +28,7 @@ setup(name='collective.js.fullcalendar',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.js.moment',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
