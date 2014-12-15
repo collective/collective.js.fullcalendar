@@ -57,4 +57,12 @@
         handler=".upgrades.recook_resources"
         profile="collective.js.fullcalendar:default"/>
 
+    <genericsetup:upgradeStep
+        title="Refresh js and css"
+        description="Recook js and css resources"
+        source="6"
+        destination="7"
+        handler=".upgrades.recook_resources"
+        profile="collective.js.fullcalendar:default"/>
+
 </configure>
