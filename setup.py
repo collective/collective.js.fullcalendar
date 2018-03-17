@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.6.5.dev0'
+version = '2.2.3.dev0'
 
 setup(name='collective.js.fullcalendar',
       version=version,
@@ -28,6 +28,7 @@ setup(name='collective.js.fullcalendar',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.js.moment',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
