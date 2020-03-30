@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.js.fullcalendar">
@@ -9,17 +10,39 @@
         directory="resources"
         />
 
+  <!-- Install profiles -->
   <genericsetup:registerProfile
-      name="default"
+      zcml:condition="not-have plone-5"
       title="jQuery FullCalendar plugin"
-      directory="profiles/default"
+      directory="profiles/plone4"
       description="jQuery FullCalendar plugin for Plone (http://arshaw.com/fullcalendar/)"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
   <genericsetup:registerProfile
+      zcml:condition="have plone-5"
+      name="default"
+      title="jQuery FullCalendar plugin (Plone 5)"
+      directory="profiles/plone5"
+      description="jQuery FullCalendar plugin for Plone (http://arshaw.com/fullcalendar/)"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <!-- Uninstall profiles -->
+  <genericsetup:registerProfile
+      zcml:condition="not-have plone-5"
       name="uninstall"
       title="jQuery FullCalendar plugin (uninstall)"
-      directory="profiles/uninstall"
+      directory="profiles/uninstall-plone4"
+      description="Uninstall jQuery FullCalendar plugin for Plone (http://arshaw.com/fullcalendar/)"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      zcml:condition="have plone-5"
+      name="uninstall"
+      title="jQuery FullCalendar plugin (Plone 5 uninstall)"
+      directory="profiles/uninstall-plone5"
       description="Uninstall jQuery FullCalendar plugin for Plone (http://arshaw.com/fullcalendar/)"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
