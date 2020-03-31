@@ -6,7 +6,7 @@ version = '1.6.5.dev0'
 setup(name='collective.js.fullcalendar',
       version=version,
       description="Plone package for integrating fullcalendar JS",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
