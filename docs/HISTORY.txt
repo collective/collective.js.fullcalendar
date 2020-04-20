@@ -4,6 +4,9 @@ Changelog
 1.6.5 (unreleased)
 ------------------
 
+- Plone 4 & Plone 5 compatibility
+  [laulaz]
+
 - Add uninstall profile.
   [thet]
 
