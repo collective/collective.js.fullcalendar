@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.5 (unreleased)
+1.6.5 (2020-05-13)
 ------------------
 
 - Plone 4 & Plone 5 compatibility
