@@ -9,7 +9,7 @@
            interface="Products.CMFPlone.interfaces.IResourceRegistry"
            remove="true" />
 
-  <records prefix="plone.bundles/solgemafull"
+  <records prefix="plone.bundles/fullcalendar"
            interface="Products.CMFPlone.interfaces.IBundleRegistry"
            remove="true" />
 

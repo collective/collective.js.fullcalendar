@@ -16,15 +16,15 @@
   </records>
 
 
-  <records prefix="plone.bundles/solgemafull"
+  <records prefix="plone.bundles/fullcalendar"
            interface="Products.CMFPlone.interfaces.IBundleRegistry">
     <value key="resources">
       <element>fullcalendar</element>
       <element>fullcalendar-gcal</element>
     </value>
     <value key="depends">jqueryui</value>
-    <value key="csscompilation">++plone++static/solgemafull-compiled.css</value>
-    <value key="jscompilation">++plone++static/solgemafull-compiled.js</value>
+    <value key="csscompilation">++plone++static/fullcalendar-compiled.css</value>
+    <value key="jscompilation">++plone++static/fullcalendar-compiled.js</value>
     <value key="compile">False</value>
     <value key="enabled">True</value>
   </records>
