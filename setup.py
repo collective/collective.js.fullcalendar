@@ -1,22 +1,23 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.6.6.edw1'
+version = '1.6.6.dev1'
 
 setup(name='collective.js.fullcalendar',
       version=version,
       description="Plone package for integrating fullcalendar JS",
       long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      open(os.path.join("docs", "HISTORY.txt")).read(),
+      # Get more strings from
+      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
-        'Intended Audience :: Developers',
-        'Intended Audience :: End Users/Desktop',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'License :: OSI Approved :: GNU General Public License (GPL)',
-        ],
+          "Framework :: Plone",
+          "Programming Language :: Python",
+          'Intended Audience :: Developers',
+          'Intended Audience :: End Users/Desktop',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+          'License :: OSI Approved :: GNU General Public License (GPL)',
+      ],
       keywords='Plone JQuery Javascript Fullcalendar',
       author='Simone Orsi',
       author_email='simahawk@gmail.com',
